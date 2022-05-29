@@ -1,0 +1,615 @@
+:root {
+    /*Colors*/
+    --primary: #DCD2B3;
+    --text-color: #54420D; 
+
+    /*Font-Family*/
+    --font-principal:  'Oswald', sans-serif; 
+    --font-tittle: 'Oleo Script Swash Caps', cursive;
+    
+}
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+/*ESTILOS HEADER y FOOTER*/
+header{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(230, 217, 162);
+    text-align: right;
+}
+
+footer{
+    margin: 0px;
+    padding: 49px;
+    background-color: rgb(230, 217, 162);
+    text-align: right;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+.menu{
+    padding: 0px;
+    margin: 0px;
+}
+.menu__item{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5em;
+    font-family: var(--font-principal);
+
+}
+
+.menu__link {
+    color: rgb(117, 90, 15)
+}
+
+.menu__pagprincipal {
+    color:aliceblue
+}
+
+/*FIN HEADER*/
+
+/*ESTILO MAIN*/
+
+#RinconFit1 {
+    background: url(../imagenes/ALFAJOR\ BLANCO.jpg);
+    background-size: cover;
+    position:relative;
+    opacity: 0.7;
+    
+}
+.Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.RinconFit1__Titulo {
+    font-size: 8em ;
+    color: rgb(107, 73, 0);
+    margin: 0px;
+    padding-bottom: 35px;
+    text-align: center;
+    font-family: var(--font-tittle)
+   
+}
+.RinconFit1__Intro {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+    margin-top: -58px;
+    font-family: var(--font-principal)
+
+}
+
+
+/*seccion productos destacados*/
+.pdestacados {
+    font-size: 30px ;
+    color: rgb(161, 108, 10);
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.pdestacados1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.pdestacados__textimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pdestacados__textimg:nth-of-type(1) {
+    grid-column: 1 / 5 ; 
+    grid-row: 1 / 2 ;
+ }
+.pdestacados__textimg:nth-of-type(2) {
+    grid-column: 5 / 9 ;
+    grid-row: 1 / 2 ;  
+}
+.pdestacados__textimg:nth-of-type(3) {
+    grid-column: 9 / 13 ; 
+    grid-row: 1 / 2
+}
+.pdestacados__textimg:nth-of-type(4) {
+    grid-column: 1 / 5 ;
+    grid-row:  2 ;
+}
+.pdestacados__textimg:nth-of-type(5) {
+    grid-column: 5 / 9 ;
+    grid-row: 2 ;
+}
+.pdestacados__textimg:nth-of-type(6) {
+    grid-column: 9 / 13 ;
+    grid-row: 2 ;
+}
+
+.pdestacados__nombre {
+    font-size: 20px ;
+    color: rgb(212, 163, 72);
+    
+}
+
+/*MOBILE**/
+ @media screen and (max-width: 480px) {
+    /*header mobile*/
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+    .menu{
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu__item{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1em;
+        font-family: var(--font-principal);
+    }
+    /*estilo main: introduccion a rf*/
+    .RinconFit1__Titulo {
+        font-size: 4em ;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        padding-bottom: 15px;
+        text-align: center;
+        font-family: var(--font-tittle)
+       
+    }
+    .RinconFit1__Intro {
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        position: relative;
+        text-align: center;
+        margin-top: -1em;
+        font-family: var(--font-principal)
+    
+    }
+    .pdestacados {
+        font-size: 1.7em;
+        color: rgb(161, 108, 10);
+        margin: 0px;
+        padding: 0.5em; 
+        text-align: center;
+        text-decoration-line: underline;
+    }
+    
+    .pdestacados1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .pdestacados__textimg{
+        display: flex;
+        flex-direction: column;
+    
+    
+    }
+    .pdestacados1__imagenes { 
+        width: 100%
+
+    }
+   
+    .pdestacados__nombre {
+        font-size: 20px ;
+        color: rgb(107, 91, 0);
+    }
+    footer{
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(230, 217, 162);
+        text-align: right;
+    }
+}
+
+/*PAGINA PRODUCTOS*/
+#Productos1 {
+    background-image: url(../imagenes/ALFAJOR\ BLANCO.jpg);
+    background-size: cover;
+    position:bottom;
+
+}
+
+.Productos1__TITULO {
+    font-size: 80px ;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: var(--font-tittle)
+}
+.productos__model {
+   display:grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+}
+
+.productos__dist {
+    display: flex;
+    flex-direction: row;
+
+ }
+
+ .productos__dist:nth-of-type(1) {
+    grid-column: 1/7;
+    grid-template-rows: 1/2;
+ }
+
+ .productos__dist:nth-of-type(2) {
+    grid-column: 7/12;
+    grid-template-rows: 1/2;
+}
+.productos__imagenes {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+  
+}
+ .productos__h3p {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.productos__nombre {
+    font-size: 20px ;
+    color: rgb(212, 163, 72);
+    margin: 0px;
+    padding: 10px;
+    text-decoration: underline;
+
+}
+
+.productos__desc {
+    font-size: 15px ;
+    color: rgb(138, 82, 10);
+    margin:0px;
+    padding:10px;
+}
+
+
+.productos__model {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 480px){
+    .logo {
+        width:20px;
+        height:20px;
+    }
+    
+    .menu{
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu__item{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 10px;
+        font-family: var(--font-principal)
+    }
+    
+    .Productos1__TITULO {
+        font-size: 4em ;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        padding: 60px;
+        text-align: center;
+        font-family: var(--font-tittle)
+    }
+    
+    .productos__model {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+    .productos__nombre {
+        font-size: 1em ;
+        color: rgb(212, 163, 72);
+        margin: 0px;
+        padding: 10px;
+        text-decoration: underline;
+    }
+    .productos__desc {
+        font-size: 0,5em ;
+        color: rgb(138, 82, 10);
+        margin:0px;
+        padding:10px;
+    }
+}
+
+
+/*PREGUNTAS FRECUENTES*/
+
+#Pfrecuentes {
+    background-image: url(../imagenes/CHOCMAN.jpg);
+    background-size: cover;
+}
+.pfrecuentes__titulo1 {
+    font-size: 6em ;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: var(--font-tittle)
+}
+.Pfrecuentes__Intro0 {
+    text-align: center;
+    margin: 0px;
+    padding: 33px;
+}
+ .Pfrecuentes__Intro {
+     color: rgb(90, 77, 5);
+     font-family: --font-principal;
+     font-size: 2em;
+}
+.Pfrecuentes__Preguntas {
+    text-shadow: none ;
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    margin: 38px;
+    background-color: #C8B98A
+}  
+.Pf__link {
+    text-decoration: none;
+    color: #54420D;
+}
+@media screen and (max-width: 480px){
+
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+.menu{
+    padding: 0px;
+    margin: 0px;
+}
+.menu__item{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+    font-family: var(--font-principal)
+}
+.pfrecuentes__titulo1 {
+    font-size: 4em ;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: var(--font-tittle)
+}
+.Pfrecuentes__Intro {
+    color: rgb(90, 77, 5);
+    font-family: --font-principal;
+    font-size: 1.5em;
+}
+.Pfrecuentes__Preguntas {
+    text-shadow: none ;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    margin: 38px;
+    background-color: #C8B98A
+} 
+}
+/*PAGINA NOSOTROS*/
+#Conócenos {
+    background-image: url(../imagenes/snicker.jpg); 
+    background-size: cover; 
+}
+.nosotros__titulo1 {
+    font-size: 80px ;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family:  'Oleo Script Swash Caps', cursive;
+}
+
+.Nosotros__Hist {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+
+}
+.nosotros__Img:nth-of-type(1) {
+    grid-template-columns: 1 ;
+    
+
+   
+}
+.Nosotros__Contenido {
+    grid-template-columns: 2 ;
+    
+}
+  
+.nosotros__img:nth-of-type(2) {
+    grid-template-columns: 3;
+
+}
+
+.Nosotros__Titulo2 {
+    font-size: 50px;
+    color: #54420D;
+    padding: 48px;
+    margin: -29px;
+    text-decoration: underline;
+}
+
+.Nosotros__Pppal {
+    font-size: 25px;
+    color: #54420D;
+   margin: auto;
+}
+
+@media screen and (max-width: 480px){ 
+.logo {
+    width: 20px;
+    height:20px;
+}
+.menu{
+    padding: 0px;
+    margin: 0px;
+}
+.menu__item{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+    font-family: var(--font-principal);
+}
+.nosotros__titulo1 {
+    font-size: 4em ;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family:  'Oleo Script Swash Caps', cursive;
+}
+.Nosotros__Hist {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: auto;
+  }
+.Nosotros__Titulo2 {
+    font-size: 1.5em;
+    color: #54420D;
+    padding: 48px;
+    margin: -29px;
+    text-decoration: underline;
+}
+.Nosotros__Pppal {
+    font-size: 1em;
+    color: #54420D;
+   margin: auto;
+}
+
+}
+/*CONTACTANOS*/
+#Contactanos {
+    background-image: url(../imagenes/CHOCMAN.jpg);
+    background-size:cover;
+    background-position:relative;
+
+}
+.Titulo1 {
+    font-size: 80px ;
+    color: rgb(95, 81, 1);
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Titulo2 {
+    font-size: 50px;
+    color: #54420D;
+    padding: 20px;
+    margin: 0px;
+    text-decoration: underline;
+    
+}
+.Contactanos__Intro0 {
+    text-align: center;
+    margin: 0px;
+    padding: 33px;
+}
+
+.Contactanos__Intro {
+    color: rgb(90, 77, 5);
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.formulario {
+    background-color: #C8B98A;
+    width: 60%;
+    margin: 2rem 20%;
+}
+
+.ItemForm {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(255, 255, 255)
+}
+@media screen and (max-width: 480px){
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+    .menu{
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu__item{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 10px;
+        font-family: var(--font-principal)
+    }
+    .Titulo1 {
+        font-size: 2em;
+        color: rgb(95, 81, 1);
+        margin: 0px;
+        padding: 60px;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+    }
+    .Titulo2 {
+        font-size: 1.5em;
+        color: #54420D;
+        padding: 20px;
+        margin: 0px;
+        text-decoration: underline;
+        
+    }
+    .Contactanos__Intro {
+        color: rgb(90, 77, 5);
+        font-family: 'Oswald', sans-serif;
+        font-size: 1em;
+    }
+    .formulario {
+        background-color: #C8B98A;
+        width: 60%;
+        margin: 1rem 10%;
+    }
+}
