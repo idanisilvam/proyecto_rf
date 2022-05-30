@@ -24,13 +24,13 @@ html {
 header{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(230, 217, 162);
+    background: linear-gradient(to right, #ffffff 0%,#e4d9a6 34%,rgb(230, 217, 162));
     text-align: right;
 }
 
 footer{
     margin: 0px;
-    padding: 49px;
+    padding: 0px;
     background-color: rgb(230, 217, 162);
     text-align: right;
 }
@@ -48,13 +48,23 @@ footer{
     display: inline-block;
     padding: 10px;
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-family: var(--font-principal);
+    transition: all 0.5s linear;
 
 }
 
 .menu__link {
-    color: rgb(117, 90, 15)
+    color: rgb(117, 90, 15);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    transition: all .3s;
+    
+}
+
+.menu__link:hover {
+    border: 2px solid rgb(117, 90, 15);
+
 }
 
 .menu__pagprincipal {
@@ -79,7 +89,7 @@ footer{
 
 }
 .RinconFit1__Titulo {
-    font-size: 8em ;
+    font-size: 8vw ;
     color: rgb(107, 73, 0);
     margin: 0px;
     padding-bottom: 35px;
@@ -89,36 +99,47 @@ footer{
 }
 .RinconFit1__Intro {
     color: rgb(255, 255, 255);
-    font-size: 2em;
+    font-size: 2vw;
     position: relative;
     text-align: center;
-    margin-top: -58px;
+    margin-top: 0px;
     font-family: var(--font-principal)
 
 }
 
 
 /*seccion productos destacados*/
-.pdestacados {
-    font-size: 30px ;
+.pdestacados__titulo {
+    font-size: 2vw ;
     color: rgb(161, 108, 10);
     margin: 0px;
     padding: 20px;
     text-align: center;
     text-decoration-line: underline;
 }
+.pdestacados1__imagenes { 
+    width: 40%; 
+    
+}
 
 .pdestacados1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
+    margin: 3%;
 }
+
 
 .pdestacados__textimg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 1s linear; 
+}
+
+.pdestacados__textimg:hover {
+    transform: scale(1.1,1.1);
+    
 }
 
 .pdestacados__textimg:nth-of-type(1) {
@@ -146,11 +167,35 @@ footer{
     grid-row: 2 ;
 }
 
+.boton__catalogo{
+    grid-column: 6/7;
+}
+.boton__catalogo{
+    width: 7rem;
+    color: white;
+    font-family: var( --font-principal);
+    text-decoration: none;
+    background-color: #b39975;
+    padding-top: 0.3rem;
+    border-radius: 0.8rem;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
 .pdestacados__nombre {
-    font-size: 20px ;
+    font-size: 1vw ;
     color: rgb(212, 163, 72);
     
 }
+
+.a {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    padding-bottom: 1rem;
+}
+
+
 
 /*MOBILE**/
  @media screen and (max-width: 480px) {
