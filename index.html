@@ -6,33 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagenes/Copia de Rincón Fit.png" type="image/x-icon">
     <title>Rincón Fit</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--HEADER-->
     <header>
-        <nav> 
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link menu__pagprincipal" href="./index.html">Home</a>
-                </li>
-                <li class="menu__item">
-                    <img class="logo" src="./imagenes/Copia de Rincón Fit.png" alt="Rincón Fit LOGO">
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link"  href="./html/Productos.html">Productos</a></li>
-                <li class="menu__item">
-                    <a class="menu__link"  href="./html/Pfrecuentes.html">Preguntas Frecuentes</a>
-                </li>
-        
-                <li class="menu__item" >
-                    <a class="menu__link"  href="./html/Nosotros.html">Nosotros</a>
-                </li>
-                <li class="menu__item" >
-                    <a class="menu__link" href="./html/Contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div   class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="menu nav justify-content-end">
+                        <li class="menu__item nav-item">
+                            <a class="menu__link menu__pagprincipal" href="./index.html">Home</a>
+                        </li> 
+                        <li class="menu__item nav-item">
+                            <img class="logo" src="./imagenes/Copia de Rincón Fit.png" alt="Rincón Fit LOGO">
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a class="menu__link nav-item"  href="./html/Productos.html">Productos</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link nav-item"  href="./html/Pfrecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                
+                        <li class="menu__item nav-item">
+                            <a class="menu__link"  href="./html/Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a class="menu__link" href="./html/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div> 
         </nav>
        
     </header>
@@ -54,31 +63,31 @@
 
     <h2 class="pdestacados__titulo">PRODUCTOS DESTACADOS</h2>
     
-    <section class="pdestacados1">
-        <article class="pdestacados__textimg">
+    <section class="pdestacados1 row">
+        <article class="pdestacados__textimg col-sm-4">
             <img class="pdestacados1__imagenes" src="./imagenes/snicker.jpg" alt="SNICKER VEGANO">
             <h3 class="pdestacados__nombre">Snickers</h3>
         </article>
-        <article class="pdestacados__textimg">
+        <article class="pdestacados__textimg col-sm-4">
             <img class="pdestacados1__imagenes" src="./imagenes/chocman.png" alt="Chocman">
             <h3 class="pdestacados__nombre">Chocman</h3>
         </article>
-        <article class="pdestacados__textimg">
+        <article class="pdestacados__textimg col-sm-4">
             <img class="pdestacados1__imagenes" src="./imagenes/peanutbutter.png" alt="Mantequilla de Maní">
             <h3 class="pdestacados__nombre">Mantequilla de Mani</h3>
         
         </article>
-        <article class="pdestacados__textimg">
+        <article class="pdestacados__textimg col-sm-4">
             <img class="pdestacados1__imagenes" src="./imagenes/muffin.jpg" alt="Muffin Chocolate">
             <h3 class="pdestacados__nombre">Muffins Chocolate</h3>
     
         </article>
-        <article class="pdestacados__textimg">
+        <article class="pdestacados__textimg col-sm-4">
             <img class="pdestacados1__imagenes" src="./imagenes/barra-proteina.png" alt="Barra Proteica">
             <h3 class="pdestacados__nombre">Barra Proteica</h3>
         
         </article>
-        <article class="pdestacados__textimg">
+        <article class="pdestacados__textimg col-sm-4">
             <img class="pdestacados1__imagenes" src="./imagenes/bombon-manjar-nuez.png" alt="Bombon Manjar Nuez">
             <h3 class="pdestacados__nombre">Bombón Manjar Nuez</h3>
         </article>
@@ -116,6 +125,8 @@
         </li>
     </ul>
 </footer>
-<!--FIN FOOTER--> 
+<!--FIN FOOTER-->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
 </body>
 </html>

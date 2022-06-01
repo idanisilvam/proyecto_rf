@@ -24,7 +24,7 @@ html {
 header{
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(to right, #ffffff 0%,#e4d9a6 34%,rgb(230, 217, 162));
+    background:rgb(230, 217, 162);
     text-align: right;
 }
 
@@ -67,6 +67,13 @@ footer{
 
 }
 
+.menu__link:hover {
+    border: 2px solid rgb(117, 90, 15);
+}
+
+a:hover {
+    color: var(--text-color);
+}
 .menu__pagprincipal {
     color:aliceblue
 }
@@ -122,12 +129,12 @@ footer{
     
 }
 
-.pdestacados1 {
+ /* .pdestacados1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin: 3%;
-}
+} */
 
 
 .pdestacados__textimg {
@@ -142,7 +149,7 @@ footer{
     
 }
 
-.pdestacados__textimg:nth-of-type(1) {
+/*.pdestacados__textimg:nth-of-type(1) {
     grid-column: 1 / 5 ; 
     grid-row: 1 / 2 ;
  }
@@ -166,11 +173,11 @@ footer{
     grid-column: 9 / 13 ;
     grid-row: 2 ;
 }
-
-.boton__catalogo{
+*/
+/*.boton__catalogo{
     grid-column: 6/7;
-}
-.boton__catalogo{
+}*/
+ .boton__catalogo{
     width: 7rem;
     color: white;
     font-family: var( --font-principal);
@@ -181,7 +188,7 @@ footer{
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-}
+} 
 .pdestacados__nombre {
     font-size: 1vw ;
     color: rgb(212, 163, 72);
@@ -219,7 +226,7 @@ footer{
     /*estilo main: introduccion a rf*/
     .RinconFit1__Titulo {
         font-size: 4em ;
-        color: rgb(255, 255, 255);
+        color: var(--text-color);
         margin: 0px;
         padding-bottom: 15px;
         text-align: center;
@@ -257,7 +264,7 @@ footer{
     
     }
     .pdestacados1__imagenes { 
-        width: 100%
+        width: 50%
 
     }
    
@@ -282,7 +289,7 @@ footer{
 }
 
 .Productos1__TITULO {
-    font-size: 80px ;
+    font-size: 8vw ;
     color: rgb(255, 255, 255);
     margin: 0px;
     padding: 60px;
@@ -295,11 +302,11 @@ footer{
    grid-template-rows: repeat(2, 1fr);
 }
 
-.productos__dist {
+/*.productos__dist {
     display: flex;
     flex-direction: row;
 
- }
+ } */
 
  .productos__dist:nth-of-type(1) {
     grid-column: 1/7;
@@ -313,7 +320,7 @@ footer{
 .productos__imagenes {
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 200px;
+    width: 40%;
   
 }
  .productos__h3p {
@@ -322,7 +329,7 @@ footer{
     margin-right: 50px;
 }
 .productos__nombre {
-    font-size: 20px ;
+    font-size: 2vw ;
     color: rgb(212, 163, 72);
     margin: 0px;
     padding: 10px;
@@ -331,7 +338,7 @@ footer{
 }
 
 .productos__desc {
-    font-size: 15px ;
+    font-size: 1.5vw ;
     color: rgb(138, 82, 10);
     margin:0px;
     padding:10px;
@@ -361,12 +368,12 @@ footer{
         display: inline-block;
         padding: 10px;
         margin: 10px;
-        font-size: 10px;
+        font-size: 2vw;
         font-family: var(--font-principal)
     }
     
     .Productos1__TITULO {
-        font-size: 4em ;
+        font-size: 5vw ;
         color: rgb(255, 255, 255);
         margin: 0px;
         padding: 60px;
@@ -380,14 +387,14 @@ footer{
         flex-wrap: wrap;
      }
     .productos__nombre {
-        font-size: 1em ;
+        font-size: 2vw ;
         color: rgb(212, 163, 72);
         margin: 0px;
         padding: 10px;
         text-decoration: underline;
     }
     .productos__desc {
-        font-size: 0,5em ;
+        font-size: 2 vw ;
         color: rgb(138, 82, 10);
         margin:0px;
         padding:10px;

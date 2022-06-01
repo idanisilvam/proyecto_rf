@@ -5,56 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagenes/Copia de Rincón Fit.png" type="image/x-icon">
+   <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <title>PRODUCTOS</title>
+
+    <title>PRODUCTOS</title> 
 </head>
 <body>
     <header>
-        <nav> 
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">Home</a>
-                </li>
-                <img class="logo" src="../imagenes/Copia de Rincón Fit.png" alt="LOGO">
-                <li class="menu__item">
-                    <a class="menu__link menu__pagprincipal"  href="./html/Productos.html">Productos</a></li>
-                <li class="menu__item">
-                    <a class="menu__link"  href="./Pfrecuentes.html">Preguntas Frecuentes</a>
-                </li>
-        
-                <li class="menu__item" >
-                    <a class="menu__link"  href="./Nosotros.html">Nosotros</a>
-                </li>
-                <li class="menu__item" >
-                    <a class="menu__link" href="./Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav> 
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div  class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="menu navbar-nav">
+                        <li class="menu__item nav-item">
+                            <a class="menu__link " href="../index.html">Home</a>
+                        </li> 
+                        <li class="menu__item nav-item">
+                            <img class="logo" src="../imagenes/Copia de Rincón Fit.png" alt="Rincón Fit LOGO">
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a class="menu__link menu__pagprincipal nav-item"  href="./html/Productos.html">Productos</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link nav-item"  href="./html/Pfrecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                
+                        <li class="menu__item nav-item">
+                            <a class="menu__link"  href="./html/Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a class="menu__link" href="./html/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div> 
+        </nav>
     </header>
 <main>
         <!-- PRODUCTOS-->
-    <section id="Productos1" class="grid-layout">
+    <section id="Productos1">
         <H1 class="Productos1__TITULO">Productos</H1>
     </section>
 
-    <section class="productos__model">
-        <article class="productos__dist">
-            <img class="productos__imagenes"src="../imagenes/BOMBON.jpg" alt="Bombón">
-            <div class="productos__h3p">
-                <h3 class="productos__nombre"> BOMBÓN DÁTIL</h3>
+    <section class="productos__model row gap-2 mt-1">
+        <article class="productos__dist card col-sm-3">
+            <img class="card-img-top"src="../imagenes/BOMBON.jpg" alt="Bombón">
+            <div class="productos__h3p card-body">
+                <h3 class="productos__nombre card-tittle"> BOMBÓN DÁTIL</h3>
                 <p class="productos__desc">Bombón hecho con avena, y pasta de dátiles 
                     y cubierto con chocolate 60% cacao sin azúcar.</p>
             </div>
         </article>
-        <article class="productos__dist">
-            <img class="productos__imagenes" src="../imagenes/ALFAJOR.jpg" alt="Bombón">
+        <article class="productos__dist card col-sm-3">
+            <img class="card-img-top" src="../imagenes/ALFAJOR.jpg" alt="Bombón">
             <div class="productos__h3p">
                 <h3 class="productos__nombre">ALFAJORES MANJAR-NUEZ</h3>
-            <p class="productos__desc">Exquisito alfajor a base de avena, harina integral, manjar sin azúcar y nueces, 
+                <p class="productos__desc ">Exquisito alfajor a base de avena, harina integral, manjar sin azúcar y nueces, 
                 cubierto en chocolate 60% s/a.</p>
             </div>
         </article>
+        <article class="productos__dist card col-sm-3 justify-content-center">
+            <img class="card-img-top" src="../imagenes/corazon rojo.jpg" alt="corazón chocolate">
+            <div class="productos__h3p">
+                <h3 class="productos__nombre">CORAZÓN DE CHOCOLATE</h3>
+                <p class="productos__desc ">Corazón de chocolate relleno con distintas opciones de relleno: manjar, mantequilla de maní y mermelada.</p>
+            </div>
+        </article>
+        <article class="productos__dist card col-sm-3">
+            <img class="card-img-top" src="../imagenes/ALFAJOR BLANCO.jpg" alt="Alfajor de chooclate blanco">
+            <div class="productos__h3p">
+                <h3 class="productos__nombre">ALFAJOR MANJAR-NUEZ CHOCOLATE BLANCO</h3>
+                <p class="productos__desc">Alfajor con la misma base que el alfajor normal, pero cubierto con chocolate blanco sin azúcar.</p>
+            </div>
+        </article>
+        <article class="productos__dist card col-sm-3">
+            <img class="card-img-top" src="../imagenes/BARRA PROTEICA.jpg" alt="Barra proteica">
+            <div class="productos__h3p">
+                <h3 class="productos__nombre">BARRA PROTEICA</h3>
+                <p class="productos__desc">Barra sin horno, hecha con mantequilla de maní, proteina whey, avena y leche, cubierta de chocolate 60% s/a y con topping de almendras tostadas.</p>
+            </div>
+        </article
     </section>
     
     <!--FIN TABLA PRODUCTOS-->
@@ -79,6 +112,8 @@
                 <a class="menu__link" href="./html/Contacto.html">Contacto</a>
             </li>
         </ul>
-    </footer>
+</footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
