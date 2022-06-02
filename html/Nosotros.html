@@ -5,32 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagenes/Copia de Rincón Fit.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Nosotros/</title>
 </head>
 <body>
     <header>
-        <nav> 
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">Home</a>
-                </li>
-                <img class="logo" src="../imagenes/Copia de Rincón Fit.png" alt="LOGO">
-                <li class="menu__item">
-                    <a class="menu__link" href="./Productos.html">Productos</a></li>
-                <li class="menu__item">
-                    <a class="menu__link"  href="./Pfrecuentes.html">Preguntas Frecuentes</a>
-                </li>
-                <li class="menu__item" >
-                    <a class="menu__link menu__pagprincipal"  href="./Nosotros.html">Nosotros</a>
-                </li>
-                <li class="menu__item" >
-                    <a class="menu__link" href="./Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav> 
-           
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div  class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="menu navbar-nav">
+                        <li class="menu__item nav-item">
+                            <a class="menu__link " href="../index.html">Home</a>
+                        </li> 
+                        <li class="menu__item nav-item">
+                            <img class="logo" src="../imagenes/Copia de Rincón Fit.png" alt="Rincón Fit LOGO">
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a class="menu__link  nav-item" href="./Productos.html">Productos</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link nav-item" href="./Pfrecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                
+                        <li class="menu__item menu__pagprincipal nav-item">
+                            <a class="menu__link" href="./Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a class="menu__link" href="./Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
     </header>
     <main>
         <section id="Conócenos">
@@ -39,10 +49,32 @@
             </h1>
         </section>
 
-        <section class="Nosotros__Hist">
-           <picture class="nosotros__img">
-            <img src="../imagenes/barra-proteina.png" alt=""> 
-           </picture>
+        <section class= "Nosotros__Hist">
+            <div id="carouselExampleIndicators" class="carousel slide col-sm-3" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../imagenes/muffin 1.svg" class="d-block w-100" alt="...">
+                </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/ALFAJOR 5.svg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/chocman 1.svg" class="d-block w-100" alt="...">
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
            <div class="Nosotros__Contenido">
             <h2 class="Nosotros__Titulo2">RINCÓN FIT</h2>
             <p class="Nosotros__Pppal">
@@ -50,10 +82,7 @@
                 pandemia intentamos llegar a  personas que buscaban otras 
                 alternativas a snacks dulces; también con enfoque a deportistas que buscan comida con más aporte de nutrientes, proteína y grasas saludables
             </p>
-           </div>
-           <picture class="nosotros__img">
-            <img src="../imagenes/peanutbutter.png" alt="Alfajores MAICENA">
-           </picture>
+            </div>
         </section>
     </main>
     <footer>
@@ -75,5 +104,7 @@
             </li>
         </ul>
     </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
