@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie&family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Raleway:wght@300&display=swap');
 :root {
     /*Colors*/
     --primary: #DCD2B3;
@@ -24,14 +26,12 @@ html {
 header{
     margin: 0px;
     padding: 0px;
-    background:rgb(230, 217, 162);
-    text-align: right;
+    background:rgb(255, 255, 255);
+    text-align: center;
 }
 
 footer{
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(230, 217, 162);
+    background-color: rgb(160, 137, 6);
     text-align: right;
 }
 
@@ -42,13 +42,15 @@ footer{
 .menu{
     padding: 0px;
     margin: 0px;
+    width: 100%;
+    justify-content: center;
 }
 .menu__item{
     list-style-type: none;
     display: inline-block;
     padding: 10px;
     margin: 10px;
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-family: var(--font-principal);
     transition: all 0.5s linear;
 
@@ -67,47 +69,42 @@ footer{
 
 }
 
-.menu__link:hover {
-    border: 2px solid rgb(117, 90, 15);
-}
 
 a:hover {
     color: var(--text-color);
 }
 .menu__pagprincipal {
-    color:aliceblue
+    color:rgb(230, 200, 69)
 }
 
 /*FIN HEADER*/
 
 /*ESTILO MAIN*/
 
-#RinconFit1 {
-    background: url(../imagenes/ALFAJOR\ BLANCO.jpg);
+#rinconfit {
+    background: url(../imagenes/ALFAJOR.jpg);
     background-size: cover;
+    background-position: center;
     position:relative;
-    opacity: 0.7;
-    
 }
-.Intro {
+.rf_intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
-.RinconFit1__Titulo {
+.rinconfit1__titulo {
     font-size: 8vw ;
-    color: rgb(107, 73, 0);
+    color: rgb(255, 255, 255);
     margin: 0px;
     padding-bottom: 35px;
     text-align: center;
     font-family: var(--font-tittle)
    
 }
-.RinconFit1__Intro {
+.rinconfit1__intro {
     color: rgb(255, 255, 255);
     font-size: 2vw;
-    position: relative;
     text-align: center;
     margin-top: 0px;
     font-family: var(--font-principal)
@@ -117,24 +114,18 @@ a:hover {
 
 /*seccion productos destacados*/
 .pdestacados__titulo {
-    font-size: 2vw ;
-    color: rgb(161, 108, 10);
+    font-size: 3vw ;
+    color: #54420D;
     margin: 0px;
     padding: 20px;
     text-align: center;
     text-decoration-line: underline;
+    font-family: 'Elsie', cursive;
 }
 .pdestacados1__imagenes { 
     width: 40%; 
     
 }
-
- /* .pdestacados1 {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 3%;
-} */
 
 
 .pdestacados__textimg {
@@ -225,8 +216,8 @@ a:hover {
     }
     /*estilo main: introduccion a rf*/
     .RinconFit1__Titulo {
-        font-size: 4em ;
-        color: var(--text-color);
+        font-size: 8vw ;
+        color: rgb(107, 73, 0);
         margin: 0px;
         padding-bottom: 15px;
         text-align: center;
@@ -235,7 +226,7 @@ a:hover {
     }
     .RinconFit1__Intro {
         color: rgb(255, 255, 255);
-        font-size: 1em;
+        font-size: 4vw;
         position: relative;
         text-align: center;
         margin-top: -1em;
@@ -281,14 +272,14 @@ a:hover {
 }
 
 /*PAGINA PRODUCTOS*/
-#Productos1 {
+#productos {
     background-image: url(../imagenes/ALFAJOR\ BLANCO.jpg);
     background-size: cover;
     position:bottom;
 
 }
 
-.Productos1__TITULO {
+.productos1__titulo{
     font-size: 8vw ;
     color: rgb(255, 255, 255);
     margin: 0px;
@@ -296,52 +287,36 @@ a:hover {
     text-align: center;
     font-family: var(--font-tittle)
 }
-.productos__model {
-   display:grid;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-}
 
-/*.productos__dist {
-    display: flex;
-    flex-direction: row;
 
- } */
 
- .productos__dist:nth-of-type(1) {
-    grid-column: 1/7;
-    grid-template-rows: 1/2;
- }
-
- .productos__dist:nth-of-type(2) {
-    grid-column: 7/12;
-    grid-template-rows: 1/2;
-}
 .productos__imagenes {
     border: 1px solid #ddd;
     border-radius: 4px;
     width: 40%;
   
 }
- .productos__h3p {
+/* .productos__h3p {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-}
+} */
 .productos__nombre {
-    font-size: 2vw ;
+    font-size: 1.5vw ;
     color: rgb(212, 163, 72);
     margin: 0px;
     padding: 10px;
     text-decoration: underline;
+    text-align: center;
 
 }
 
 .productos__desc {
-    font-size: 1.5vw ;
+    font-size: 1vw ;
     color: rgb(138, 82, 10);
+    text-align: center;
     margin:0px;
-    padding:10px;
+    padding:15px;
 }
 
 
@@ -352,6 +327,23 @@ a:hover {
     padding: 50px;
     margin: 5px;
 }
+
+.card {
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card-img-top {
+    width: 100%;
+    height: 300px;
+}
+
+
 
 @media screen and (max-width: 480px){
     .logo {
