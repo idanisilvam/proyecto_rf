@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Elsie&family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Raleway:wght@300&display=swap");
+/*MISC */
+/*Colors*/
+/*Font-Family*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62,5%; }
+
+header {
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  text-align: center; }
+
+.logo {
+  width: 60px;
+  height: 60px; }
+
+.menu {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  justify-content: center; }
+  .menu__item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1vw;
+    font-family: "Oswald", sans-serif;
+    transition: all 0.5s linear; }
+  .menu__link {
+    color: #755a0f;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    transition: all .3s; }
+  .menu__link:hover {
+    border: 2px solid #755a0f; }
+  .menu__pagprincipal {
+    color: #e6c845; }
+
+a:hover {
+  color: #54420D; }
+
+footer {
+  background-color: #a08906;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+  background-color: #e6d9a2;
+  text-align: right; }
+
+#rinconfit {
+  background: url(../imagenes/ALFAJOR.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.rf_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.rinconfit1__titulo {
+  font-size: 8vw;
+  color: white;
+  margin: 0px;
+  padding-bottom: 35px;
+  text-align: center;
+  font-family: "Oleo Script Swash Caps", cursive; }
+
+.rinconfit1__intro {
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 0px;
+  font-family: "Oswald", sans-serif; }
+
+/*seccion productos destacados*/
+.pdestacados__titulo {
+  font-size: 3vw;
+  color: #54420D;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: 'Elsie', cursive; }
+
+.pdestacados__textimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s linear; }
+
+.pdestacados__textimg:hover {
+  transform: scale(1.1, 1.1); }
+
+.pdestacados__nombre {
+  font-size: 1vw;
+  color: #d4a348; }
+
+.pdestacados1__imagenes {
+  width: 40%; }
+
+.boton__catalogo {
+  width: 7rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  background-color: #b39975;
+  padding-top: 0.3rem;
+  border-radius: 0.8rem;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center; }
+
+.a {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  padding-bottom: 1rem; }
+
+/*MOBILE**/
+@media screen and (max-width: 480px) {
+  /*header mobile*/
+  .logo {
+    width: 20px;
+    height: 20px; }
+  .menu {
+    padding: 0px;
+    margin: 0px; }
+    .menu__item {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      font-size: 1em;
+      font-family: "Oswald", sans-serif; }
+  /*estilo main: introduccion a rf*/
+  .rinconrit1__titulo {
+    font-size: 8vw;
+    color: #6b4900;
+    margin: 0px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: "Oleo Script Swash Caps", cursive; }
+    .rinconrit1__titulo__intro {
+      color: white;
+      font-size: 4vw;
+      position: relative;
+      text-align: center;
+      margin-top: -1em;
+      font-family: "Oswald", sans-serif; }
+  .pdestacados {
+    font-size: 1.7em;
+    color: #a16c0a;
+    margin: 0px;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration-line: underline; }
+    .pdestacados__textimg {
+      display: flex;
+      flex-direction: column; }
+    .pdestacados__nombre {
+      font-size: 20px;
+      color: #6b5b00; }
+  .pdestacados1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+    .pdestacados1__imagenes {
+      width: 50%; }
+  footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e6d9a2;
+    text-align: right; } }

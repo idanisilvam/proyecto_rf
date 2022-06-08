@@ -1,0 +1,162 @@
+#rinconfit {
+    background: url(../imagenes/ALFAJOR.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+.rf_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.rinconfit1 {
+    &__titulo {
+        font-size: 8vw ;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        padding-bottom: 35px;
+        text-align: center;
+        font-family: $font-tittle;
+    }
+           &__intro {
+        color: rgb(255, 255, 255);
+        font-size: 2vw;
+        text-align: center;
+        margin-top: 0px;
+        font-family: $font-principal;
+        }
+}
+
+/*seccion productos destacados*/
+.pdestacados {
+    &__titulo {
+    font-size: 3vw ;
+    color: #54420D;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: 'Elsie', cursive;
+    }
+
+    &__textimg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1s linear;
+    }
+
+    &__textimg:hover {
+        transform: scale(1.1,1.1);
+    }
+    &__nombre {
+        font-size: 1vw ;
+        color: rgb(212, 163, 72);
+    }
+}
+.pdestacados1__imagenes { 
+    width: 40%; 
+    
+}
+
+
+ .boton__catalogo{
+    width: 7rem;
+    color: white;
+    font-family: $font-principal;
+    text-decoration: none;
+    background-color: #b39975;
+    padding-top: 0.3rem;
+    border-radius: 0.8rem;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+
+.a {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    padding-bottom: 1rem;
+}
+
+
+
+/*MOBILE**/
+ @media screen and (max-width: 480px) {
+    /*header mobile*/
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+    .menu{
+        padding: 0px;
+        margin: 0px;
+    
+    &__item {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1em;
+        font-family: $font-principal;
+        }
+    }
+    /*estilo main: introduccion a rf*/
+    .rinconrit1__titulo {
+        font-size: 8vw ;
+        color: rgb(107, 73, 0);
+        margin: 0px;
+        padding-bottom: 15px;
+        text-align: center;
+        font-family: $font-tittle;
+
+    
+        &__intro {
+        color: rgb(255, 255, 255);
+        font-size: 4vw;
+        position: relative;
+        text-align: center;
+        margin-top: -1em;
+        font-family: $font-principal;
+    
+        }
+    }
+    .pdestacados {
+        font-size: 1.7em;
+        color: rgb(161, 108, 10);
+        margin: 0px;
+        padding: 0.5em; 
+        text-align: center;
+        text-decoration-line: underline;
+        &__textimg {
+            display: flex;
+            flex-direction: column;
+        }
+        &__nombre {
+            font-size: 20px ;
+            color: rgb(107, 91, 0);
+        }
+    }
+    
+    .pdestacados1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    
+        &__imagenes { 
+            width: 50%
+    
+        }
+    }
+    footer{
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(230, 217, 162);
+        text-align: right;
+    }
+   
+}

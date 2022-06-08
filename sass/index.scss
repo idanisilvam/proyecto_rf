@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie&family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Raleway:wght@300&display=swap');
+ 
+/*MISC */
+@import './misc/variables';
+@import './misc/normalize';
+
+ 
+@import './partials/header';
+@import './partials/footer';
+
+@import './pages/home';
+@import './pages/contacto';
+@import './pages/nosotros';
+@import './pages/pfrecuentes';
+@import './pages/productos';
+
+
+

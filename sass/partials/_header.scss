@@ -1,0 +1,46 @@
+header{
+    margin: 0px;
+    padding: 0px;
+    background:rgb(255, 255, 255);
+    text-align: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+.menu {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+
+    &__item {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1vw;
+        font-family: $font-principal;
+        transition: all 0.5s linear;
+    }
+
+    &__link {
+        color: rgb(117, 90, 15);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    transition: all .3s;
+    }
+
+    &__link:hover {
+        border: 2px solid rgb(117, 90, 15);  
+    }
+
+    &__pagprincipal {
+        color:rgb(230, 200, 69)
+    }
+}
+
+a:hover {
+    color: $text-color;
+}
