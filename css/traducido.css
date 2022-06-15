@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Elsie&family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Raleway:wght@300&display=swap");
 /*MISC */
 /*Colors*/
+primary {
+  color: #DCD2B3; }
+
+base {
+  color: white; }
+
+text-color {
+  color: #54420D; }
+
 /*Font-Family*/
 * {
   margin: 0;
@@ -60,10 +69,11 @@ footer {
   background-position: center;
   position: relative; }
 
-.rf_intro {
+.rf_intro, .pdestacados__textimg {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: center; }
+  align-items: center; }
 
 .rinconfit1__titulo {
   font-size: 8vw;
@@ -91,9 +101,6 @@ footer {
   font-family: 'Elsie', cursive; }
 
 .pdestacados__textimg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   transition: all 1s linear; }
 
 .pdestacados__textimg:hover {

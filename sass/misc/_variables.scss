@@ -1,7 +1,17 @@
 
     /*Colors*/
-    $primary: #DCD2B3;
-    $text-color: #54420D; 
+    $colors:(
+        primary: #DCD2B3,
+        base: rgb(255,255,255),
+        text-color: #54420D, 
+    );
+
+    @each $color, $value in $colors {
+        #{$color} {
+            color: #{$value};
+        }
+    }
+  
 
     /*Font-Family*/
     $font-principal: 'Oswald', sans-serif; 

@@ -42,5 +42,5 @@ header{
 }
 
 a:hover {
-    color: $text-color;
+    color:  map-get($colors, text-color);
 }
