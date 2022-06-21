@@ -1,0 +1,89 @@
+#contactanos {
+    background-image: url(../imagenes/chocman.png);
+    background-size:cover;
+}
+.titulo1 {
+    font-size: 80px;
+    color: map-get($colors, base );
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: $font-tittle;
+}
+
+.titulo2 {
+    font-size: 50px;
+    color: #54420D;
+    padding: 20px;
+    margin: 0px;
+    text-decoration: underline;
+    
+}
+.contactanos {
+
+    &__intro {
+        text-align: center;
+        padding: 33px;
+    }
+
+    &__intro1 {
+        color: rgb(90, 77, 5);
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+    }
+}
+.formulario {
+    background-color: #C8B98A;
+    width: 60%;
+    margin: 2rem 20%;
+}
+
+.ItemForm {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(255, 255, 255)
+}
+@media screen and (max-width: 480px){
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+    .menu{
+        padding: 0px;
+        margin: 0px;
+    
+        &__item{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            font-size: 10px;
+            font-family: $font-principal;
+        }
+    }
+    .Titulo1 {
+        font-size: 2em;
+        color: rgb(95, 81, 1);
+        margin: 0px;
+        padding: 60px;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+    }
+    .Titulo2 {
+        font-size: 1.5em;
+        color: #54420D;
+        padding: 20px;
+        margin: 0px;
+        text-decoration: underline;
+        
+    }
+    .contactanos__intro {
+        color: rgb(90, 77, 5);
+        font-family: 'Oswald', sans-serif;
+        font-size: 1em;
+    }
+    .formulario {
+        background-color: #C8B98A;
+        width: 60%;
+        margin: 1rem 10%;
+    }
+}

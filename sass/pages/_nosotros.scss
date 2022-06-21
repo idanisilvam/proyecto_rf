@@ -1,0 +1,100 @@
+#Conócenos {
+    background: url(../imagenes/PANQUEQUEPEANUT.jpg); 
+    background-size: cover; 
+    background-position: center;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+.nosotros {
+    &__titulo1 {
+    font-size: 80px ;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family:  'Oleo Script Swash Caps', cursive;
+    }
+
+    &__hist {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__contenido {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    }
+
+    &__titulo2 {
+    font-size: 4vh;
+    color: #54420D;
+    padding: 48px;
+    margin: -29px;
+    text-decoration: underline;
+    }
+
+    &__pppal {
+    font-size: 2vw;
+    color: #54420D;
+    margin: auto;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .logo {
+        width: 20px;
+        height:20px;
+    }
+    .menu{
+        padding: 0px;
+        margin: 0px;
+
+        &__item{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 10px;
+        font-family: $font-principal;
+        }
+    }
+    .nosotros {
+        &__titulo1 {
+        font-size: 4em ;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        padding: 60px;
+        text-align: center;
+        font-family:  'Oleo Script Swash Caps', cursive;
+        }
+        &__hist {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+        } 
+        &__carrusel{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2vw;
+        }  
+        &__titulo2 {
+        font-size: 1.5em;
+        color: #54420D;
+        padding: 48px;
+        margin: -29px;
+        text-decoration: underline;
+        }
+        &__pppal {
+        font-size: 1em;
+        color: #54420D;
+        margin: auto;
+        }
+    }
+}

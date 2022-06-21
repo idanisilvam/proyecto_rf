@@ -244,36 +244,36 @@ footer{
 } */
 
 /*PAGINA PRODUCTOS*/
-#productos {
+/* #productos {
     background-image: url(../imagenes/ALFAJOR\ BLANCO.jpg);
     background-size: cover;
     position:bottom;
 
-}
+} */
 
-.productos1__titulo{
+/* .productos1__titulo{
     font-size: 8vw ;
     color: rgb(255, 255, 255);
     margin: 0px;
     padding: 60px;
     text-align: center;
     font-family: var(--font-tittle)
-}
+} */
 
 
 
-.productos__imagenes {
+/* .productos__imagenes {
     border: 1px solid #ddd;
     border-radius: 4px;
     width: 40%;
   
-}
+} */
 /* .productos__h3p {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
 } */
-.productos__nombre {
+/* .productos__nombre {
     font-size: 1.5vw ;
     color: rgb(212, 163, 72);
     margin: 0px;
@@ -289,10 +289,10 @@ footer{
     text-align: center;
     margin:0px;
     padding:15px;
-}
+} */
 
 
-.productos__model {
+/* .productos__model {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -363,7 +363,7 @@ footer{
         margin:0px;
         padding:10px;
     }
-}
+} */
 
 
 /*PREGUNTAS FRECUENTES*/

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Elsie&family=Oleo+Script+Swash+Caps&family=Oswald:wght@500&family=Raleway:wght@300&display=swap");
 /*MISC */
 /*Colors*/
@@ -58,10 +59,10 @@ a:hover {
 footer {
   background-color: #a08906;
   text-align: right;
-  margin: 0px;
-  padding: 0px;
   background-color: #e6d9a2;
-  text-align: right; }
+  text-align: right;
+  display: flex;
+  justify-content: space-around; }
 
 #rinconfit {
   background: url(../imagenes/ALFAJOR.jpg);
@@ -187,3 +188,330 @@ footer {
     padding: 0px;
     background-color: #e6d9a2;
     text-align: right; } }
+
+#contactanos {
+  background-image: url(../imagenes/chocman.png);
+  background-size: cover; }
+
+.titulo1 {
+  font-size: 80px;
+  color: white;
+  margin: 0px;
+  padding: 60px;
+  text-align: center;
+  font-family: "Oleo Script Swash Caps", cursive; }
+
+.titulo2 {
+  font-size: 50px;
+  color: #54420D;
+  padding: 20px;
+  margin: 0px;
+  text-decoration: underline; }
+
+.contactanos__intro {
+  text-align: center;
+  padding: 33px; }
+
+.contactanos__intro1 {
+  color: #5a4d05;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px; }
+
+.formulario {
+  background-color: #C8B98A;
+  width: 60%;
+  margin: 2rem 20%; }
+
+.ItemForm {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white; }
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 20px;
+    height: 20px; }
+  .menu {
+    padding: 0px;
+    margin: 0px; }
+    .menu__item {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      font-size: 10px;
+      font-family: "Oswald", sans-serif; }
+  .Titulo1 {
+    font-size: 2em;
+    color: #5f5101;
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; }
+  .Titulo2 {
+    font-size: 1.5em;
+    color: #54420D;
+    padding: 20px;
+    margin: 0px;
+    text-decoration: underline; }
+  .contactanos__intro {
+    color: #5a4d05;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em; }
+  .formulario {
+    background-color: #C8B98A;
+    width: 60%;
+    margin: 1rem 10%; } }
+
+#Conócenos {
+  background: url(../imagenes/PANQUEQUEPEANUT.jpg);
+  background-size: cover;
+  background-position: center; }
+
+body {
+  height: 100vh;
+  margin: 0; }
+
+.nosotros__titulo1 {
+  font-size: 80px;
+  color: white;
+  margin: 0px;
+  padding: 60px;
+  text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive; }
+
+.nosotros__hist {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.nosotros__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.nosotros__titulo2 {
+  font-size: 4vh;
+  color: #54420D;
+  padding: 48px;
+  margin: -29px;
+  text-decoration: underline; }
+
+.nosotros__pppal {
+  font-size: 2vw;
+  color: #54420D;
+  margin: auto; }
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 20px;
+    height: 20px; }
+  .menu {
+    padding: 0px;
+    margin: 0px; }
+    .menu__item {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      font-size: 10px;
+      font-family: "Oswald", sans-serif; }
+  .nosotros__titulo1 {
+    font-size: 4em;
+    color: white;
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive; }
+  .nosotros__hist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px; }
+  .nosotros__carrusel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw; }
+  .nosotros__titulo2 {
+    font-size: 1.5em;
+    color: #54420D;
+    padding: 48px;
+    margin: -29px;
+    text-decoration: underline; }
+  .nosotros__pppal {
+    font-size: 1em;
+    color: #54420D;
+    margin: auto; } }
+
+#pfrecuentes {
+  background: url(../imagenes/chocman.png);
+  background-size: cover;
+  position: bottom; }
+
+.pfrecuentes__titulo {
+  font-size: 6em;
+  color: white;
+  margin: 0px;
+  padding: 60px;
+  text-align: center;
+  font-family: "Oleo Script Swash Caps", cursive; }
+
+.pfrecuentes__intro {
+  text-align: center;
+  margin: 0px;
+  padding: 33px; }
+
+.pfrecuentes__intro1 {
+  color: #5a4d05;
+  font-family: "Oswald", sans-serif;
+  font-size: 3em; }
+
+.pfrecuentes__preguntas {
+  text-shadow: none;
+  font-size: 3vw;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  margin: 38px; }
+
+.accordion-button {
+  color: #54420D;
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem; }
+
+.accordion-button:not(.collapsed) {
+  color: #54420D;
+  background-color: #ffffff;
+  box-shadow: #ffffff; }
+
+.accordion-button:focus {
+  box-shadow: white; }
+
+.accordion-parrafo {
+  font-size: 1.5vw;
+  color: #54420D;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+/*.Pf__link {
+    text-decoration: none;
+    color: #54420D;
+} */
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 20px;
+    height: 20px; }
+  .menu {
+    padding: 0px;
+    margin: 0px; }
+    .menu__item {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      font-size: 10px;
+      font-family: "Oswald", sans-serif; }
+  .pfrecuentes__titulo1 {
+    font-size: 4em;
+    color: white;
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: "Oleo Script Swash Caps", cursive; }
+  .pfrecuentes__intro {
+    color: #5a4d05;
+    font-family: --font-principal;
+    font-size: 1.5em; }
+  .pfrecuentes__preguntas {
+    text-shadow: none;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    margin: 38px;
+    background-color: #C8B98A; } }
+
+#productos {
+  background: url(../imagenes/ALFAJORBLANCO.jpg);
+  background-size: cover;
+  position: bottom; }
+
+.productos__titulo {
+  font-size: 8vw;
+  color: white;
+  margin: 0px;
+  padding: 60px;
+  text-align: center;
+  font-family: "Oleo Script Swash Caps", cursive; }
+
+.productos__imagenes {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 40%; }
+
+.productos__nombre {
+  font-size: 1.5vw;
+  color: #d4a348;
+  margin: 0px;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center; }
+
+.productos__desc {
+  font-size: 1vw;
+  color: #8a520a;
+  text-align: center;
+  margin: 0px;
+  padding: 15px; }
+
+.productos__model {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px;
+  margin: 5px; }
+
+.card {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease; }
+  .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%); }
+  .card-img-top {
+    width: 100%;
+    height: 300px; }
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 20px;
+    height: 20px; }
+  .menu {
+    padding: 0px;
+    margin: 0px; }
+    .menu__item {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      font-size: 2vw;
+      font-family: "Oswald", sans-serif; }
+  .productos__titulo {
+    font-size: 5vw;
+    color: white;
+    margin: 0px;
+    padding: 60px;
+    text-align: center;
+    font-family: "Oleo Script Swash Caps", cursive; }
+    .productos__titulo__model {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+    .productos__titulo__nombre {
+      font-size: 2vw;
+      color: #d4a348;
+      margin: 0px;
+      padding: 10px;
+      text-decoration: underline; }
+    .productos__titulo__desc {
+      font-size: 2 vw;
+      color: #8a520a;
+      margin: 0px;
+      padding: 10px; } }
